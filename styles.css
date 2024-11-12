@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  width: 1500px;
+  background-color: rgb(6, 9, 21);
+}
+
+.container {
+  background-color: white;
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  margin: auto;
+  top: 100px;
+  left: 400px;
+  border-radius: 25px;
+  text-align: center;
+  animation: out linear forwards .5s;
+}
+
+@keyframes out {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.inputlogin input {
+  border: none;
+}
+
+.itemInput {
+  margin-top: 25px;
+  background-color: rgb(231, 231, 231);
+  outline: none;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.itemInput input {
+  outline: none;
+}
+
+.boxRemember {
+  margin-top: 15px;
+  position: absolute;
+  left: -110px;
+  font-size: 13px;
+  position: relative;
+}
+
+.boxRemember label {
+  position: absolute;
+}
+
+.boxForgotPassword a {
+  margin-top: -15px;
+  position: absolute;
+  font-size: 13px;
+  left: 200px;
+  text-decoration: none;
+  color: #838383;
+}
+
+.btnLogin {
+  margin-top: 25px;
+}
+
+.btnLogin button {
+  background-color: rgb(0, 231, 166);
+  padding: 8px;
+  width: 200px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 700;
+}
+
+.orUseAccount {
+  margin-top: 45px;
+}
+
+.iconLogin {
+  margin-top: 25px;
+}
+
+.fa-brands {
+  margin-left: 15px;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.BoxRegister {
+  width: 400px;
+  height: 500px;
+  color: white;
+  background-image: url(Ảnh\ chụp\ màn\ hình\ 2024-11-12\ 225632.png);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 400px;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.start {
+  margin-top: 150px;
+  margin-right: 70px;
+  margin-left: 70px;
+  font-weight: 700;
+}
+
+.dhaac {
+  margin-top: 15px;
+  margin-right: 50px;
+  margin-left: 50px;
+  color: #e7e7e7;
+}
+
+.btnRegister {
+  margin-top: 40px;
+  opacity: 1;
+}
+
+.btnRegister button {
+  background-color: #ffffff4d;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 150px;
+  border-radius: 25px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.container {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.content {
+  transition: all 0.5s ease;
+}
+
+.show-content2 .content1 {
+  left: -100%;
+}
+
+.show-content2 .content2 {
+  left: 0;
+}
+
+.BoxLogin {
+  width: 400px;
+  height: 500px;
+  color: white;
+  background-image: url(Ảnh\ chụp\ màn\ hình\ 2024-11-12\ 225632.png);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  border-radius: 25px 0px 0px 25px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.content2 {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.content2.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.content1.hide {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.Boxsignin {
+  width: 400px;
+  height: 500px;
+  color: white;
+  background-image: url(Ảnh\ chụp\ màn\ hình\ 2024-11-12\ 225632.png);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 25px 0px 0px 25px;
+  font-weight: 700;
+}
+
+.signup {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  left: 400px;
+  border-radius: 0px 25px 25px 0px;
+  margin-top: 50px;
+}
+
+.login {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  border-radius: 0px 25px 25px 0px;
+  margin-top: 50px;
+  animation: up linear forwards .5s;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(100px);
+  }
+}
+
+.loginhire {
+  margin-top: 50px;
+}
+
+.btnSignup .fa-arrow-right {
+  transform: rotate(180deg);
+  position: absolute;
+  left: 160px;
+}
+
+.btnlogin .fa-arrow-right {
+  position: absolute;
+  right: 154px;
+  top: 324px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 90px;
+  top: 200px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
+
+.eye-icon2 {
+  position: absolute;
+  right: 90px;
+  top: 190px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}

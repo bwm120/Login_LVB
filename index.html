@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="content content1">
+      <div class="login">
+        <div class="loginhire">
+          <h1>Login Hire.</h1>
+        </div>
+        <div class="inputlogin">
+          <input class="itemInput" type="email" placeholder="Email" />
+          <input class="itemInput" type="password" placeholder="Password" id="password" class="password-input" />
+          <span class="eye-icon2" onclick="togglePassword()">&#128065;</span>
+        </div>
+        <div class="boxRemember">
+          <input type="checkbox" /><label class="labelRemember" for="">Remember me</label>
+        </div>
+        <div class="boxForgotPassword">
+          <a href="">Forgot password?</a>
+        </div>
+        <div class="btnLogin">
+          <button>Login</button>
+        </div>
+        <div class="orUseAccount">
+          <h5>or use your account</h5>
+        </div>
+        <div class="iconLogin">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-google"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="BoxRegister">
+          <div class="start">
+            <h1>Start your journey now</h1>
+          </div>
+          <div class="dhaac">
+            <p>
+              if you don't have an account yet. join us and start your journey
+            </p>
+          </div>
+          <div class="btnRegister">
+            <button onclick="showContent2()" class="btnlogin">
+              Register <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="content content2">
+      <div class="signup">
+        <div class="signhire">
+          <h1>Signup Hire.</h1>
+        </div>
+        <div class="inputlogin password-container">
+          <input class="itemInput" type="text" placeholder="Name" />
+          <input class="itemInput" type="email" placeholder="Email" />
+          <input class="itemInput" type="password" placeholder="Password" id="password" class="password-input" />
+          <span class="eye-icon" onclick="togglePasswordVisibility()">&#128065;</span>
+        </div>
+        <div class="btnLogin">
+          <button>Signup</button>
+        </div>
+        <div class="orUseAccount">
+          <h5>or use your account</h5>
+        </div>
+        <div class="iconLogin">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-google"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="Boxsignin">
+        <div class="start">
+          <h1>Hello Friend</h1>
+        </div>
+        <div class="dhaac">
+          <p>
+            if you already have an account login here and have fun
+          </p>
+        </div>
+        <div class="btnRegister">
+          <button onclick="showContent1()" class="btnSignup">
+            Login <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./scripts.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+</html>
